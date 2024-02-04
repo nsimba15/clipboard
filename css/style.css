@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --StrongCyan: hsl(171, 66%, 44%);
+  --LightBlue: hsl(233, 100%, 69%);
+  --DarkGrayishBlue: hsl(210, 10%, 33%);
+  --GrayishBlue: hsl(201, 11%, 66%);
+  --White: hsl(100, 100%, 100%);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--DarkGrayishBlue);
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+p {
+  color: var(--GrayishBlue);
+  margin: 16px 0;
+  line-height: 1.7;
+}
+
+.circle {
+  width: 100px;
+}
+
+header {
+  width: 100%;
+  height: 50vh;
+  background: url("/images/bg-header-desktop.png") no-repeat;
+  background-position: center;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  margin-top: -40px;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 2.8rem;
+}
+
+.content .pcont {
+  letter-spacing: 1.5px;
+  margin: 15px 0;
+  width: 70%;
+  margin: 10px auto;
+  font-weight: 400;
+}
+
+button.btn {
+  padding: 15px 25px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 30px;
+  color: var(--White);
+  margin-top: 30px;
+  border-bottom: 1px solid;
+  outline: none;
+}
+button.ios {
+  background-color: var(--StrongCyan);
+}
+button.mac {
+  background-color: var(--LightBlue);
+  margin-left: 10px;
+}
+
+.track {
+  text-align: center;
+  margin: 100px 0;
+}
+
+.track .paragraph {
+  text-align: center;
+  margin: 10px auto;
+  width: 70%;
+}
+
+.track .sectionContent {
+  display: flex;
+  align-items: center;
+  margin: 70px 0;
+  gap: 90px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: left;
+}
+
+.relative img {
+  margin-left: -30px;
+  height: 480px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.clipboard {
+  text-align: center;
+}
+
+.clipboard .pclip {
+  width: 60%;
+  margin: 10px auto;
+}
+
+.clipboard img {
+  margin: 60px 0;
+  height: 490px;
+}
+
+.work {
+  text-align: center;
+  padding: 0 70px;
+  margin-bottom: 55px;
+}
+
+.work .pwork {
+  width: 60%;
+  margin: 10px auto;
+}
+.prncipal {
+  margin: 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60vh;
+}
+
+.prncipal .listItems {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 25px;
+}
+
+.list p {
+  font-size: 15px;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.images img {
+  width: 105px;
+}
+
+.macs {
+  margin: 100px 0;
+}
+
+.macs .pmac {
+  width: 70%;
+  margin: 10px auto;
+}
+
+footer {
+  background: var(--GrayishBlue);
+  padding: 40px 6%;
+}
+
+.footer-conte {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-conte .left {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+}
+
+.left .loggg img {
+  width: 50px;
+}
+.left ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 16px;
+  color: var(--DarkGrayishBlue);
+}
+
+.left ul li:hover {
+  cursor: pointer;
+  color: var(--StrongCyan);
+}
+
+.left .navigation {
+  display: flex;
+  gap: 30px;
+}
+
+.right .icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icons img {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 420px) {
+  header {
+    background: url("/images/bg-header-mobile.png") no-repeat;
+    background-position: center;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  .track .paragraph,
+  .pwork,
+  .pclip,
+  .pcont,
+  .pmac {
+    width: 100%;
+    font-size: 14px;
+  }
+  .content {
+    padding: 15px 4%;
+    margin-top: -10px;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 1.8rem;
+  }
+
+  .content p {
+    letter-spacing: normal;
+    margin: 15px 0;
+  }
+
+  button.btn {
+    width: 100%;
+  }
+
+  button.mac {
+    margin-left: 0;
+  }
+  .track {
+    margin: 50px 0;
+    padding: 20px 5%;
+  }
+
+  .track .sectionContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 0;
+    gap: 90px;
+  }
+
+  .sectionContent .items {
+    text-align: center;
+  }
+
+  .relative img {
+    width: 100%;
+    margin-left: 0;
+    height: 240px;
+  }
+
+  .work {
+    padding: 20px 0;
+  }
+
+  .sectionContent .items {
+    grid-template-columns: 1fr;
+  }
+  .clipboard {
+    padding: 10px 4%;
+  }
+
+  .clipboard img {
+    margin: 40px 0;
+    width: 100%;
+    height: 240px;
+  }
+
+  .prncipal {
+    margin: 50px;
+    height: 100%;
+  }
+
+  .prncipal .listItems {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .macs {
+    margin: 70px 0;
+  }
+
+  .listItems .list {
+    min-width: 100%;
+  }
+
+  .images {
+    margin: 40px 0;
+    flex-direction: column;
+    gap: 33px;
+  }
+  .footer-conte,
+  .footer-conte .left,
+  .navigation,
+  .navigation ul {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
